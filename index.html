@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/dfe2005901.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <!-- <img src="Pictures/logo.png" class="logo" /> -->
+          <p>Poulami</p>
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+            <div>
+
+                <h1>Hi,</h1><h1><span> I'm Poulami Saha</span><br /></h1> 
+                <p>Software Engineer</p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+    <!-----------about----------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="pictures/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Experienced React Native Developer with a passion for creating
+              robust, efficient, and user‑friendly mobile applications.
+             Proficient in leveraging React Native framework to develop
+              cross‑platform applications for iOS and Android devices.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>React Native</span><br /></li>
+                <li><span>Javascript </span><br /></li>
+                <li><span>RESTful APIs </span><br /></li>
+                <li><span>React js </span><br /></li>
+                <li><span>HTML5 </span><br /></li>
+                <li><span>CSS3</span><br /></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021</span><br />Btech in ECE From Techno Main Saltlake
+                </li>
+                <li>
+                  <span>2015</span><br />12th from Raghunathganj High School
+                </li>
+                <li>
+                  <span>2013</span><br />10th from Raghunathganj Girls' High
+                  School
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Uvaan Infotech Pvt.Ltd</span><br />React Native
+                  Developer
+                </li>
+                <li>
+                  <span>Uvaan Infotech Pvt.Ltd</span><br />
+                  React Native Intern
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------services------------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>Mobile App Development</h2>
+            <p>
+              Harnessing the power of React Native, I craft mobile apps that
+              seamlessly run on both iOS and Android platforms.
+            </p>
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Custom Development</h2>
+            <p>
+              I am able to build custom solutions based on clients'
+              requirements, whether it's developing from scratch or enhancing
+              existing applications.
+            </p>
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------------Portfolio------------------>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="pictures/work-1.png" />
+            <div class="layer">
+              <h3>ParkHere</h3>
+              <p>
+                Built a dynamic and user‑friendly mobile application designed to
+                simplify parking solutions.
+              </p>
+              <p>
+                Implemented geolocation services to enable users to locate
+                nearby parking spaces accurately.
+              </p>
+            </div>
+          </div>
+          <div class="work">
+            <img src="pictures/work-2.png" />
+            <div class="layer">
+              <h3>Cheffy Hub</h3>
+              <p>
+                Collaborated closely with the design team to implement an
+                intuitive and visually appealing user interface for food
+                delivery app
+              </p>
+              <!-- <a href="#">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a> -->
+            </div>
+          </div>
+          <div class="work">
+            <img src="pictures/work-3.png" />
+            <div class="layer">
+              <h3>Dhvanie</h3>
+              <p>
+                Built a social media app enabling users to upload, share,
+                comment and enjoy rich media content seamlessly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------- ------contact me----------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>poulamisaha0111@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>8777891026</p>
+            <!-- <div class="social-icons">
+              <a href="linkedin.com/in/poulami1/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div> -->
+            <a href="Pictures/Poulami Saha Resume.pdf" class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbygoD9CU6mNlxv3pRe-YoR0hs0UifX4qKpyagOU3ZeBfWiCJosojZqYFIK_8TNAK2Sl/exec";
+      const form = document.forms["submit-to-google-sheet"];
+         const msg=document.getElementById('msg')
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {msg.innerHTML="message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+    form.reset()})
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
