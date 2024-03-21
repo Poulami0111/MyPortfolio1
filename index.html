@@ -15,20 +15,23 @@
           <!-- <img src="Pictures/logo.png" class="logo" /> -->
           <p>Poulami</p>
           <ul>
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Service</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#header" style="--i:1;" >Home</a></li>
+            <li><a href="#about" style="--i:2;">About</a></li>
+            <li><a href="#services" style="--i:3;">Service</a></li>
+            <li><a href="#portfolio" style="--i:4;" >Portfolio</a></li>
+            <li><a href="#contact" style="--i:5;">Contact</a></li>
           </ul>
         </nav>
         <div class="header-text">
             <div>
-
-                <h1>Hi,</h1><h1><span> I'm Poulami Saha</span><br /></h1> 
-                <p>Software Engineer</p>
+                <h3>Hello, It's Me</h3>
+                <h1><span> Poulami Saha</span><br /></h1> 
+               <h3>And I'm a  <span class="multiple-text"></span></h3>
             </div>
-            
+            <div class="logo1">
+                    <img src="Pictures/profile.png" class="logo" />
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -41,7 +44,7 @@
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
-            <p>
+            <p >
               Experienced React Native Developer with a passion for creating
               robust, efficient, and user‑friendly mobile applications.
              Proficient in leveraging React Native framework to develop
@@ -83,11 +86,11 @@
             <div class="tab-contents" id="experience">
               <ul>
                 <li>
-                  <span>Uvaan Infotech Pvt.Ltd</span><br />React Native
+                  <span>Uvaan Infotech Pvt.Ltd</span><br/>React Native
                   Developer
                 </li>
                 <li>
-                  <span>Uvaan Infotech Pvt.Ltd</span><br />
+                  <span>Uvaan Infotech Pvt.Ltd</span><br/>
                   React Native Intern
                 </li>
               </ul>
@@ -100,7 +103,7 @@
     <!------------------services------------------------->
     <div id="services">
       <div class="container">
-        <h1 class="sub-title">My Services</h1>
+        <div class="sub-title"><h1>My Services</h1></div>
         <div class="services-list">
           <div>
             <i class="fa-brands fa-app-store-ios"></i>
@@ -111,6 +114,7 @@
             </p>
             <!-- <a href="#">Learn More</a> -->
           </div>
+        
           <div>
             <i class="fa-solid fa-crop"></i>
             <h2>Custom Development</h2>
@@ -128,7 +132,7 @@
     <!----------------Portfolio------------------>
     <div id="portfolio">
       <div class="container">
-        <h1 class="sub-title">My work</h1>
+        <div class="sub-title"><h1>My work</h1></div>
         <div class="work-list">
           <div class="work">
             <img src="pictures/work-1.png" />
@@ -211,6 +215,7 @@
     </div>
 
     <script>
+        // --------navbar active link----
       var tablinks = document.getElementsByClassName("tab-links");
       var tabcontents = document.getElementsByClassName("tab-contents");
       function opentab(tabname) {
@@ -223,8 +228,7 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
       }
-    </script>
-    <script>
+// -------contact form submission----
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbygoD9CU6mNlxv3pRe-YoR0hs0UifX4qKpyagOU3ZeBfWiCJosojZqYFIK_8TNAK2Sl/exec";
       const form = document.forms["submit-to-google-sheet"];
@@ -239,6 +243,41 @@
     form.reset()})
           .catch((error) => console.error("Error!", error.message));
       });
+//    --------header animation---
+        document.addEventListener('DOMContentLoaded', function() {
+    const headerText = document.querySelector('.header-text');
+    function animateHeaderText() {
+        headerText.classList.add('show');
+    }
+    setTimeout(animateHeaderText, 100);
+});
+
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        // ----scrollrevel---
+        ScrollReveal({
+            reset:true,
+            distance:'80px',
+            duration: 2000,
+            delay: 100
+        });
+        ScrollReveal().reveal('.sub-title',{origin:'top'})
+        ScrollReveal().reveal('.about-col-2 p,.work-list',{origin:'right'})
+        ScrollReveal().reveal('.contact-left',{origin:'left'})
+        ScrollReveal().reveal('.tab-contents.active-tab, .services-list,.contact-right',{origin:'bottom'})
+
+
+
+        // -----typed js------
+        const typed=new Typed('.multiple-text',{
+            strings:['Mobile App Developer','Web App Developer'],
+            typeSpeed:100,
+            backSpeed:100,
+            backDelay:1000,
+            loop:true
+        })
     </script>
   </body>
 </html>
